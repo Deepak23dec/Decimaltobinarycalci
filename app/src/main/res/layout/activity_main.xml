@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#E8F4E697"
+   >
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:id="@+id/toolbar"
+    android:background="#FFD05B"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center"
+           >
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Enter Decimal Number"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:layout_margin="10sp"
+               />
+           <EditText
+               android:id="@+id/etdecimal"
+               android:layout_width="300sp"
+               android:layout_height="48sp"
+               android:hint="enter decimal number"
+               android:padding="10sp"
+              android:textColor="@color/black"
+               android:background="@drawable/border"/>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <Button
+                   android:id="@+id/btnconvert"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="convert"
+                   android:onClick="onclickconvert"
+                   android:backgroundTint="#FFAB00"
+                   android:layout_margin="15sp"/>
+               <Button
+                   android:id="@+id/btnreset"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="reset"
+                   android:onClick="onclickreset"
+                   android:backgroundTint="#FFAB00"
+                   android:layout_margin="15sp"/>
+           </LinearLayout>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Binary Number"
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:layout_margin="10sp"
+               />
+           <EditText
+               android:id="@+id/etbinary"
+               android:layout_width="300sp"
+               android:layout_height="48sp"
+               android:hint="binary number"
+               android:padding="10sp"
+               android:textColor="@color/black"
+               android:background="@drawable/border"/>
+       </LinearLayout>
+
+
+</LinearLayout>
